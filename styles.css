@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.popup {
+  width: 350px;
+  background: #ffffff;
+}
+
+.popup :where(.picker, header, .all-colors) {
+  display: flex;
+  align-items: center;
+}
+
+.popup .picker {
+  padding: 30px 0;
+  background: #b0d9f8;
+  justify-content: center;
+}
+
+#picker-btn {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  width: 200px;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#picker-btn:hover {
+  box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+
+.selected-colors {
+  margin: 10px 15px;
+}
+
+.selected-colors header {
+  justify-content: space-between;
+}
+
+header .title {
+  font-size: 1.1rem;
+  font-family: 'Noto Serif KR', serif;
+}
+
+header .clear-all {
+  cursor: pointer;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 0.9rem;
+  color: #5372F0;
+  transition: ease-in-out 0.2s;
+}
+
+header .clear-all:hover {
+  color: #0636f8;
+  transform: scale(1.05);
+}
+
+.selected-colors.hide {
+  display: none;
+}
+
+.selected-colors .all-colors {
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 10px 0 15px;
+}
+
+.all-colors .color {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: calc(100% / 3);
+}
+
+.all-colors .rectangle {
+  height: 21px;
+  width: 21px;
+  display: block;
+  margin-right: 8px; 
+  border-radius: 5px;
+}
+
+.all-colors .color span {
+  font-size: 0.96rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Space Grotesk', sans-serif;
+}
